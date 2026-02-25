@@ -2,8 +2,6 @@
 
 This guide provides the essential command syntax for implementing **Access Control Lists (ACLs)** and **Open Shortest Path First (OSPF)** on Cisco IOS routers.
 
-## ---
-
 **1\. Access Control Lists (ACL)**
 
 ACLs are used for packet filtering and traffic identification. Remember: **There is an implicit "deny all" at the end of every ACL.**
@@ -47,24 +45,6 @@ ip access-list extended REMOTE\_ACCESS
 interface fa0/0  
  ip access-group REMOTE\_ACCESS in
 
-## 
-
-## 
-
-## 
-
-## 
-
-## 
-
-## 
-
-## 
-
-## 
-
-## 
-
 ## **2\. OSPF Configuration**
 
 OSPF is a Link-State routing protocol. It uses the **Shortest Path First (SPF)** algorithm to determine the best route.
@@ -95,12 +75,6 @@ interface GigabitEthernet0/0
 router ospf 1  
  area 0 authentication message-digest
 
-## 
-
-## 
-
-## 
-
 ## **3\. Verification & Troubleshooting**
 
 Use these commands to confirm your configuration is working as intended.
@@ -112,10 +86,6 @@ Use these commands to confirm your configuration is working as intended.
 | show access-lists | Displays all ACLs and hit counts (matches). |
 | show ip access-lists | Specific to IPv4 ACLs. |
 | \`show ip interface | include access\` |
-
-### 
-
-### 
 
 ### **OSPF Verification**
 
